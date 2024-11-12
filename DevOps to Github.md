@@ -62,7 +62,7 @@ gh ado2gh generate-script --ado-org ORGNAME --github-org ORGNAME --all
 
 5. The migrate.ps1 script requires PowerShell to run. If not already installed see the install instructions to install PowerShell on Windows, Linux, or Mac. Then run the script.
 
-Refer to the official documentation for more details.
+Refer to the [official documentation](https://docs.github.com/en/migrations/using-github-enterprise-importer/migrating-from-azure-devops-to-github-enterprise-cloud/migrating-repositories-from-azure-devops-to-github-enterprise-cloud) for more details.
 
 ## Tips
 - check the available commands for gh gei by running 'gh gei --help' or 'gh gei migrate-repo --help'
