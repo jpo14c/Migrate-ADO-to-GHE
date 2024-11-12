@@ -21,11 +21,10 @@ Good to read [click here](https://github.com/github/gh-gei#readme)
 - Check GitHub CLI installation instructions [click here](https://github.com/cli/cli#readme)
 - Install GitHub Enterprise Importer (GEI) extension and ado2gh extension
 - Generate Personal Access Token (PAT) from source and target repositories. GitHub > Settings > Profile > Personal Access Token
-- If migrating from ADO to GHE then source PAT from ADO and target PAT from GHE
+- If migrating from ADO to GHE then source PAT = ADO and target PAT = GHE
 - Set the privileges appropriately while creating the token. check required access [here](https://docs.github.com/en/migrations/using-github-enterprise-importer/preparing-to-migrate-with-github-enterprise-importer/managing-access-for-github-enterprise-importer#required-roles-for-github)
-- Set environment variables 'GH_SOURCE_PAT' or 'ADO_PAT' (source PAT), 'GH_PAT' (target PAT)
+- Set environment variables  'ADO_PAT' (source PAT), 'GH_PAT' (target PAT)
 - If migrating ADO to GitHub then ADO_PAT & GH_PAT
-- If migrating GitHub to GitHub then GH_SOURCE_PAT & GH_PAT
 - These two variables can be passed with 'gh gei ' command but the best practice is to set as environment as a secure approach
 - **IMPORTANT** make the ADO source repos READ ONLY to avoid any new change during migration
   - Select ADO repository > Settings > Security tab > Select the repos in the list and set 'Deny' in all drop-downs.
