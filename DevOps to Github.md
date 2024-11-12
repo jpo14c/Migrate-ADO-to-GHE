@@ -56,7 +56,7 @@ Good to read [click here](https://github.com/github/gh-gei#readme)
 
 3. Run the generate-script command to generate a migration script.
 
-gh ado2gh generate-script --ado-org ORGNAME --github-org ORGNAME --all
+    # gh ado2gh generate-script --ado-org ORGNAME --github-org ORGNAME --all
 
 4. The previous command will have created a migrate.ps1 PowerShell script. Review the steps in the generated script and tweak if necessary.
 
