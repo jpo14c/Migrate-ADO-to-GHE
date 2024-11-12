@@ -49,10 +49,8 @@ Use the [migration analyzer tool](https://github.com/e2eSolutionArchitect/migrat
   
 - ## GitHub
  - Profile > Settings > Developer Settings > Personal access tokens
- 
-## Post Migration checklist [click here](https://github.com/e2eSolutionArchitect/migrate-ado-to-ghe/blob/main/post-migration.md)
 
-Azure DevOps to GitHub Usage
+## Azure DevOps to GitHub Usage
 Create Personal Access Tokens with access to the Azure DevOps org, and the GitHub org (for more details on scopes needed refer to our official documentation).
 
 Set the ADO_PAT and GH_PAT environment variables.
@@ -103,6 +101,8 @@ echo $GH_PAT
 ## Check migration instructions here
 - [Single repo migration](https://github.com/e2eSolutionArchitect/migrate-ado-to-ghe/blob/main/single-repo-migration.md)
 - [Batch migration](https://github.com/e2eSolutionArchitect/migrate-ado-to-ghe/blob/main/batch-migration.md)
+
+## Post Migration checklist [click here](https://github.com/e2eSolutionArchitect/migrate-ado-to-ghe/blob/main/post-migration.md)
 
 Note: 
 - There is a size limit over which importer doesn't work. migration file size > 10GB (it may change, please verify)
