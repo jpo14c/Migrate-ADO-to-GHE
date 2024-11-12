@@ -50,17 +50,17 @@ Good to read [click here](https://github.com/github/gh-gei#readme)
  - Profile > Settings > Developer Settings > Personal access tokens
 
 ## Azure DevOps to GitHub Usage
-Create Personal Access Tokens with access to the Azure DevOps org, and the GitHub org (for more details on scopes needed refer to our official documentation).
+1. Create Personal Access Tokens with access to the Azure DevOps org, and the GitHub org (for more details on scopes needed refer to our official documentation).
 
-Set the ADO_PAT and GH_PAT environment variables.
+2. Set the ADO_PAT and GH_PAT environment variables.
 
-Run the generate-script command to generate a migration script.
+3. Run the generate-script command to generate a migration script.
 
 gh ado2gh generate-script --ado-org ORGNAME --github-org ORGNAME --all
 
-The previous command will have created a migrate.ps1 PowerShell script. Review the steps in the generated script and tweak if necessary.
+4. The previous command will have created a migrate.ps1 PowerShell script. Review the steps in the generated script and tweak if necessary.
 
-The migrate.ps1 script requires PowerShell to run. If not already installed see the install instructions to install PowerShell on Windows, Linux, or Mac. Then run the script.
+5. The migrate.ps1 script requires PowerShell to run. If not already installed see the install instructions to install PowerShell on Windows, Linux, or Mac. Then run the script.
 
 Refer to the official documentation for more details.
 
