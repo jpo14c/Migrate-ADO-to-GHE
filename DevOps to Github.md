@@ -30,8 +30,7 @@ Good to read [click here](https://github.com/github/gh-gei#readme)
   - Select ADO repository > Settings > Security tab > Select the repos in the list and set 'Deny' in all drop-downs.
 - Ensure the GitHub app [Azure pipeline](https://github.com/e2eSolutionArchitect/migrate-ado-to-ghe/blob/main/install-azure-pipeline-github-apps.md) is installed in github account. It is required to migrate ADO pipelines to GitHub.
 
-## Analyze migration
-Use the [migration analyzer tool](https://github.com/e2eSolutionArchitect/migrate-ado-to-ghe/blob/main/migration-analyzer.md) to estimate and plan for the migration. 
+
 
 ## Important:
 - Service hooks are not migrated from ADO, it needs to be recreated separately in GH.
