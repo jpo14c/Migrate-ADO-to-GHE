@@ -52,6 +52,21 @@ Use the [migration analyzer tool](https://github.com/e2eSolutionArchitect/migrat
  
 ## Post Migration checklist [click here](https://github.com/e2eSolutionArchitect/migrate-ado-to-ghe/blob/main/post-migration.md)
 
+Azure DevOps to GitHub Usage
+Create Personal Access Tokens with access to the Azure DevOps org, and the GitHub org (for more details on scopes needed refer to our official documentation).
+
+Set the ADO_PAT and GH_PAT environment variables.
+
+Run the generate-script command to generate a migration script.
+
+gh ado2gh generate-script --ado-org ORGNAME --github-org ORGNAME --all
+
+The previous command will have created a migrate.ps1 PowerShell script. Review the steps in the generated script and tweak if necessary.
+
+The migrate.ps1 script requires PowerShell to run. If not already installed see the install instructions to install PowerShell on Windows, Linux, or Mac. Then run the script.
+
+Refer to the official documentation for more details.
+
 ## Tips
 - check the available commands for gh gei by running 'gh gei --help' or 'gh gei migrate-repo --help'
 
