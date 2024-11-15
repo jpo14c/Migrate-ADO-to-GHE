@@ -57,13 +57,18 @@ Good to read [click here](https://github.com/github/gh-gei#readme)
 
 2. Set the ADO_PAT and GH_PAT environment variables.
 
-3. Run the generate-script command to generate a migration script.
-
+3. Use the gh ado2gh grant-migrator-role command, replacing ORGANIZATION with the organization you want to grant the migrator role for, ACTOR with the user or 
+   team name, and TYPE with USER or TEAM.
+   gh ado2gh grant-migrator-role --github-org ORGANIZATION --actor ACTOR --actor-type TYPE
+   Note
+   If you're the granting the migrator role for GHE.com, you must also include the target API URL for your enterprise's subdomain. For example: --target-api-url 
+   https://api.octocorp.ghe.com
+4. Run the generate-script command to generate a migration script.
     ### gh ado2gh generate-script --ado-org ORGNAME --github-org ORGNAME --all
 
-4. The previous command will have created a migrate.ps1 PowerShell script. Review the steps in the generated script and tweak if necessary.
+5. The previous command will have created a migrate.ps1 PowerShell script. Review the steps in the generated script and tweak if necessary.
 
-5. The migrate.ps1 script requires PowerShell to run. If not already installed see the install instructions to install PowerShell on Windows, Linux, or Mac. Then run the script.
+6. The migrate.ps1 script requires PowerShell to run. If not already installed see the install instructions to install PowerShell on Windows, Linux, or Mac. Then run the script.
 
 Refer to the [official documentation](https://docs.github.com/en/migrations/using-github-enterprise-importer/migrating-from-azure-devops-to-github-enterprise-cloud/migrating-repositories-from-azure-devops-to-github-enterprise-cloud) for more details.
 
