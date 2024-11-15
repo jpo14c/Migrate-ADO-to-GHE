@@ -75,8 +75,10 @@ Good to read [click here](https://github.com/github/gh-gei#readme)
     --github-pat <github-pat>
 ```
 
-4. To migrate a single repository, use the **gh ado2gh migrate-repo** command  
-
+4. To migrate a single repository, use the **gh ado2gh migrate-repo** command
+```
+   gh ado2gh migrate-repo --ado-org SOURCE --ado-team-project TEAM-PROJECT --ado-repo CURRENT-NAME --github-org DESTINATION --github-repo NEW-NAME
+```
 ## Tips
 - check the available commands for gh gei by running 'gh gei --help' or 'gh gei migrate-repo --help'
 
