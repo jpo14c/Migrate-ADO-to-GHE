@@ -66,13 +66,13 @@ Good to read [click here](https://github.com/github/gh-gei#readme)
    gh ado2gh migrate-repo --help 
    gh-ado2gh migrate-repo [options]
    Options:  --ado-org <ado-org> (REQUIRED)
-  --ado-team-project <ado-team-project> (REQUIRED)
-  --ado-repo <ado-repo> (REQUIRED)
-  --github-org <github-org> (REQUIRED)
-  --github-repo <github-repo> (REQUIRED)
-  --target-repo-visibility <internal|private|public>
-  --ado-pat <ado-pat>
-  --github-pat <github-pat>  
+              --ado-team-project <ado-team-project> (REQUIRED)
+              --ado-repo <ado-repo> (REQUIRED)
+              --github-org <github-org> (REQUIRED)
+              --github-repo <github-repo> (REQUIRED)
+              --target-repo-visibility <internal|private|public>
+              --ado-pat <ado-pat>
+              --github-pat <github-pat>  
   ```
   
    
