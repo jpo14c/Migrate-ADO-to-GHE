@@ -60,7 +60,8 @@ Good to read [click here](https://github.com/github/gh-gei#readme)
 3. Use the gh ado2gh grant-migrator-role command, replacing ORGANIZATION with the organization you want to grant the migrator role for,
    ACTOR with the user or    team name, and TYPE with USER or TEAM.
    ```
-   ### gh ado2gh grant-migrator-role --github-org ORGANIZATION --actor ACTOR --actor-type TYPE
+   # 
+    gh ado2gh grant-migrator-role --github-org ORGANIZATION --actor ACTOR --actor-type TYPE
    ```
    ### Note
      If you're the granting the migrator role for GHE.com, you must also include the target API URL for your enterprise's
