@@ -65,8 +65,7 @@ Good to read [click here](https://github.com/github/gh-gei#readme)
    gh ado2gh --help
    gh ado2gh migrate-repo --help 
    gh-ado2gh migrate-repo [options]
-   Options:
-  --ado-org <ado-org> (REQUIRED)
+   Options:  --ado-org <ado-org> (REQUIRED)
   --ado-team-project <ado-team-project> (REQUIRED)
   --ado-repo <ado-repo> (REQUIRED)
   --github-org <github-org> (REQUIRED)
