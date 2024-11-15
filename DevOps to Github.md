@@ -79,7 +79,7 @@ Good to read [click here](https://github.com/github/gh-gei#readme)
 ```
    gh ado2gh migrate-repo --ado-org SOURCE --ado-team-project TEAM-PROJECT --ado-repo CURRENT-NAME --github-org DESTINATION --github-repo NEW-NAME
 ```
-<span style="color:blue">Note </span>.
+**Note** <br/> 
 If you're migrating to GHE.com, add --target-api-url TARGET-API-URL, where TARGET-API-URL is the base API URL for your enterprise's subdomain. 
 ## Tips
 - check the available commands for gh gei by running 'gh gei --help' or 'gh gei migrate-repo --help'
