@@ -117,11 +117,6 @@ Note:
 
   ## Generate script for bulk migration
 ```
-### Github to Github
-gh gei generate-script --github-source-org <github-source-org-name> \
---github-target-org <github-target-org-name> \
---all --output migrate.sh
-
 ### ADO to Github
 gh ado2gh generate-script --ado-org <ado-source-org-name> \
 --github-org <github-target-org-name> \
