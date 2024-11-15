@@ -58,7 +58,6 @@ Good to read [click here](https://github.com/github/gh-gei#readme)
  ```
   $env:ADO_PAT="TOKEN"
   $env:GH_PAT="TOKEN"
-
 ```
 3. Use the gh ado2gh --help command. 
    ```
@@ -73,9 +72,9 @@ Good to read [click here](https://github.com/github/gh-gei#readme)
               --target-repo-visibility <internal|private|public>
               --ado-pat <ado-pat>
               --github-pat <github-pat>
-              
-  ```  
------------------   
+  ```            
+  
+-----------------
 5. Run the generate-script command to generate a migration script.
     ### gh ado2gh generate-script --ado-org ORGNAME --github-org ORGNAME --all
 
