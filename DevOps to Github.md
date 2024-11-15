@@ -90,10 +90,10 @@ Refer to the [official documentation](https://docs.github.com/en/migrations/usin
 
 ### Install GH extension
 #### Run the below commands in GitHub CLI
-```
+
 # Check the installed extension list
 gh extension list
-```
+
 #### The extension for GEI (GitHub Enterprise Importer) is located [here](https://github.com/github/gh-gei)
 Please check the installation instruction for the extension [here](https://github.com/github/gh-gei#readme)
 
