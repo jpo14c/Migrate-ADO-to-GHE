@@ -59,7 +59,11 @@ Good to read [click here](https://github.com/github/gh-gei#readme)
   $env:ADO_PAT="TOKEN"
   $env:GH_PAT="TOKEN"
 ```
-3. Use the gh ado2gh --help command. 
+3. Run the generate-script command to generate a migration script.
+```
+gh ado2gh generate-script --ado-org ORGNAME --github-org ORGNAME --output repo_list.ps1
+```
+4. Use the gh ado2gh --help command. 
 ```
    gh ado2gh --help
    gh ado2gh migrate-repo --help 
@@ -75,7 +79,7 @@ Good to read [click here](https://github.com/github/gh-gei#readme)
     --github-pat <github-pat>
 ```
 
-4. To migrate a single repository, use the **gh ado2gh migrate-repo** command
+5. To migrate a single repository, use the **gh ado2gh migrate-repo** command
 ```
    gh ado2gh migrate-repo --ado-org SOURCE --ado-team-project TEAM-PROJECT --ado-repo CURRENT-NAME --github-org DESTINATION --github-repo NEW-NAME
 ```
