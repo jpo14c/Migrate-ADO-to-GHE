@@ -10,7 +10,7 @@ Good to read [click here](https://github.com/github/gh-gei#readme)
 -----------------
 
 ## Migration Approach:
-- Migrate repositories from ADO to GH [click here](https://github.com/e2eSolutionArchitect/migrate-ado-to-ghe/blob/main/README.md#check-migration-instructions-here)
+- Migrate repositories from ADO to GH 
 - Migrate Azure Pipelines to GitHub Actions
 - Migrate remaining assets (boards, artifacts) from ADO to GitHub
 - Before  migrate from Azure DevOps, you should plan out how you will run your migration. Before migrating any data, you will need to
