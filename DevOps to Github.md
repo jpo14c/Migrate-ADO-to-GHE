@@ -56,16 +56,29 @@ Good to read [click here](https://github.com/github/gh-gei#readme)
 1. Create Personal Access Tokens with access to the Azure DevOps org, and the GitHub org (for more details on scopes needed refer to our official documentation).
 
 2. Set the ADO_PAT and GH_PAT environment variables.
+ ```
+  $env:ADO_PAT="TOKEN"
+  $env:GH_PAT="TOKEN"
 
-3. Use the gh ado2gh grant-migrator-role command, replacing ORGANIZATION with the organization you want to grant the migrator role for,
-   ACTOR with the user or    team name, and TYPE with USER or TEAM.
+```
+3. Use the gh ado2gh --help command. 
    ```
-   # 
-    gh ado2gh grant-migrator-role --github-org ORGANIZATION --actor ACTOR --actor-type TYPE
+   gh ado2gh --help
+   gh ado2gh migrate-repo --help 
+   gh-ado2gh migrate-repo [options]
+   Options:
+  --ado-org <ado-org> (REQUIRED)
+  --ado-team-project <ado-team-project> (REQUIRED)
+  --ado-repo <ado-repo> (REQUIRED)
+  --github-org <github-org> (REQUIRED)
+  --github-repo <github-repo> (REQUIRED)
+  --target-repo-visibility <internal|private|public>
+  --ado-pat <ado-pat>
+  --github-pat <github-pat>
+
+  
    ```
-   ### Note
-     If you're the granting the migrator role for GHE.com, you must also include the target API URL for your enterprise's
-     subdomain. For example: --target-api-url   https://api.octocorp.ghe.com
+  
    
 5. Run the generate-script command to generate a migration script.
     ### gh ado2gh generate-script --ado-org ORGNAME --github-org ORGNAME --all
