@@ -66,17 +66,17 @@ Good to read [click here](https://github.com/github/gh-gei#readme)
    gh-ado2gh migrate-repo [options]
    Options:
     --ado-org <ado-org> (REQUIRED)
-              --ado-team-project <ado-team-project> (REQUIRED)
-              --ado-repo <ado-repo> (REQUIRED)
-              --github-org <github-org> (REQUIRED)
-              --github-repo <github-repo> (REQUIRED)
-              --target-repo-visibility <internal|private|public>
-              --ado-pat <ado-pat>
-              --github-pat <github-pat>
+    --ado-team-project <ado-team-project> (REQUIRED)
+    --ado-repo <ado-repo> (REQUIRED)
+    --github-org <github-org> (REQUIRED)
+    --github-repo <github-repo> (REQUIRED)
+    --target-repo-visibility <internal|private|public>
+    --ado-pat <ado-pat>
+    --github-pat <github-pat>
 ```   
 
 4. Run the generate-script command to generate a migration script.
-    ** gh ado2gh generate-script --ado-org ORGNAME --github-org ORGNAME --all
+    **gh ado2gh generate-script --ado-org ORGNAME --github-org ORGNAME --all**
 
 5. The previous command will have created a migrate.ps1 PowerShell script. Review the steps in the generated script and tweak if necessary.
 
