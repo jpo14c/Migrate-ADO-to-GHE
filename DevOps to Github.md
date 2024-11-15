@@ -1,5 +1,4 @@
-# migrate-ADO-to-GHE
-Migrate Azure DevOps to Github Enterprise
+
 # Migrate Azure DevOps to Github Enterprise
 
 Good to read [click here](https://github.com/github/gh-gei#readme)
