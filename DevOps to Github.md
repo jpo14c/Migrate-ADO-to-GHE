@@ -83,6 +83,15 @@ gh ado2gh generate-script --ado-org ORGNAME --github-org ORGNAME --output repo_l
 ```
    gh ado2gh migrate-repo --ado-org SOURCE --ado-team-project TEAM-PROJECT --ado-repo CURRENT-NAME --github-org DESTINATION --github-repo NEW-NAME
 ```
+6. Downloading a repository migration log with the BBS2GH extension
+   If your migration source is Bitbucket Server, you can download the latest migration log for an individual repository with the gh bbs2gh download-logs command.
+    Replace DESTINATION with the destination organization, REPOSITORY with the repository name, and FILENAME with a file name for the downloaded file.
+
+  Shell
+  ```
+  gh bbs2gh download-logs --github-target-org DESTINATION --target-repo REPOSITORY --migration-log-file FILENAME
+  ```
+
 **Note** <br/> 
 If you're migrating to GHE.com, add --target-api-url TARGET-API-URL, where TARGET-API-URL is the base API URL for your enterprise's subdomain. 
 ## Tips
