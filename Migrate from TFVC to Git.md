@@ -24,7 +24,7 @@ If you get an output similar to Unable to load DLL 'Microsoft.VisualStudio.Setup
 
 4. If you haven't already, configure Git with your name and email address by running git config --global user.name "NAME" and git config --global user.email EMAIL, replacing NAME with your name and EMAIL with your email address.
 
-5. Run git tfs clone, passing your TFVC repository’s URL and repository path as arguments. For example, to convert the example repository from https://dev.azure.com/octocat into a Git repository stored in the /example directory, run git tfs clone --branches=all https://dev.azure.com/octocat $/example.
+5. Run git tfs clone, passing your TFVC repository’s URL and repository path as arguments. run git tfs clone  https://dev.azure.com/octocat $/example/branch.
 
 6. Move into the directory for the newly-created Git repository.
 
