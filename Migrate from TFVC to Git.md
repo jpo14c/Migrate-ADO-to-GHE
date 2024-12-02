@@ -10,7 +10,7 @@ Visual Studio Team Explorer <br>
 git-tfs, installed using Chocolatey or by downloading the binary release manually <br>
 Git
 
-1.  "⚫" Create a new repository on GitHub. To avoid errors, do not initialize the new repository with README, license, or gitignore files. You can add these files after your project has been pushed to GitHub. 
+⚫1 Create a new repository on GitHub. To avoid errors, do not initialize the new repository with README, license, or gitignore files. You can add these files after your project has been pushed to GitHub. 
 
 2.To confirm that Git is installed on your machine, run git --version.
 
