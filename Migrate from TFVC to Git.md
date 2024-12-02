@@ -6,8 +6,8 @@ If you migrate with git-tfs, you will retain the full history of your TFVC repos
 
 To follow these steps, you must use Windows and have the following tools installed:
 
-Visual Studio Team Explorer
-git-tfs, installed using Chocolatey or by downloading the binary release manually
+Visual Studio Team Explorer <br>
+git-tfs, installed using Chocolatey or by downloading the binary release manually <br>
 Git
 
 1. Create a new repository on GitHub. To avoid errors, do not initialize the new repository with README, license, or gitignore files. You can add these files after your project has been pushed to GitHub. For more information, see "Creating a new repository."
