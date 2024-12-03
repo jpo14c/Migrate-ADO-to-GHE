@@ -12,7 +12,7 @@
 4. Next we need to update the actions importer, even though that we just installed it. I don’t know why this needs to be done, but without it the migration will most probably produce an error. Run update with following command:  ```gh actions-importer update```
 
 
-5. Now we are ready to simulate the migration and see how well this tool can handle all of our pipeline quirks. To run the simulation use Audit command with output directory.
+5. Now we are ready to simulate the migration and see how well this tool can handle all of our pipeline quirks. To run the simulation use Audit command with output directory.<br>
 ```gh actions-importer audit azure-devops --no-ssl-verify --output-dir C:\Users\jpo14c\PROJECTS\pipeline_2_github```
 ## Migration
 Finally we can run our importer and do the actual migration. Great thing about this tool is that it will create pull request about the imported action. It won’t just magically create things into your GitHub repository. To be able to create a pull request is a powerful tool to inspect the final result, maybe create an extension and rerun the the migration. Pull request can also be reviewed by your co-workers, so you get that extra security and safety over what you are doing.
