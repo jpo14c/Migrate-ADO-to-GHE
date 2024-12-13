@@ -22,7 +22,7 @@ The output should start with something similar to git-tfs version 0.32.0.0 (TFS 
 
 If you get an output similar to Unable to load DLL 'Microsoft.VisualStudio.Setup.Configuration.Native.dll': The specified module could not be found. (Exception from HRESULT: 0x8007007E), make sure that Visual Studio Team Explorer is correctly installed.
 
-**4.** To Check git configuation run ```git config --list --global```<br> If you haven't already, configure Git with your name and email address by running git config --global user.name "NAME" and git config --global user.email EMAIL, replacing NAME with your name and EMAIL with your email address.
+**4.** To Check git configuation run ```git config --list --global```<br> If you haven't already, configure Git with your name and email address by running ```git config --global user.name "NAME"``` and ```git config --global user.email EMAIL```, replacing NAME with your name and EMAIL with your email address.
 
 **5.** Run git tfs clone, passing your TFVC repository’s URL and repository path as arguments. <br> run ``` git tfs clone https: //dev.azure.com/octocat $/example/branch ```
 
