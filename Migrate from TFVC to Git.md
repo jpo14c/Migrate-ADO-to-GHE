@@ -16,7 +16,7 @@ Git
 
 The output should be similar to git version 2.40.0.
 
-**3.** To confirm that git-tfs is installed on your machine, run git tfs --version.
+**3.** To confirm that git-tfs is installed on your machine, run ```git tfs --version```
 
 The output should start with something similar to git-tfs version 0.32.0.0 (TFS client library 16.0.0.0 (MS)).
 
