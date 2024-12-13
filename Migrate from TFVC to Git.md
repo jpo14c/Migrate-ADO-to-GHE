@@ -1,7 +1,7 @@
 ### If you’re migrating on Microsoft Windows, use the git-tfs extension ###
 
 Team Foundation Server (TFS), renamed Azure DevOps Server in 2019, is a set of tools developed by Microsoft which also includes Team Foundation Version Control (TFVC), a centralized version control system similar to Git.
-In this document, we focus on the TFVC to Git migration.
+In this document, we focus on the TFVC to Github migration.
 If you migrate with git-tfs, you will retain the full history of your TFVC repository.
 
 To follow these steps, you must use Windows and have the following tools installed:
@@ -12,7 +12,7 @@ Git
 
 **1.** Create a new repository on GitHub. To avoid errors, do not initialize the new repository with README, license, or gitignore files. You can add these files after your project has been pushed to GitHub. 
 
-**2.** To confirm that Git is installed on your machine, run git --version.
+**2.** To confirm that Git is installed on your machine, run ```git --version```
 
 The output should be similar to git version 2.40.0.
 
