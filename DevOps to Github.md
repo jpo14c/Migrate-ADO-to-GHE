@@ -1,8 +1,7 @@
 
 # Migrate Azure DevOps to Github Enterprise
 
-Good to read <br>
-[GitHub Enterprise Importer CLI](https://github.com/github/gh-gei#readme)<br>
+Need to read <br>
 [migrating-repositories Doc](https://docs.github.com/en/migrations/using-github-enterprise-importer/migrating-from-azure-devops-to-github-enterprise-cloud/migrating-repositories-from-azure-devops-to-github-enterprise-cloud)
 
 ## Objectives:
@@ -23,7 +22,7 @@ Good to read <br>
 # Preparation:
 - Download Github CLI [click here](https://cli.github.com/)
 - Check GitHub CLI installation instructions [click here](https://github.com/cli/cli#readme)
-- Install GitHub Enterprise Importer (GEI) extension and ado2gh extension
+- Install GitHub Enterprise Importer (GEI) extension and ado2gh extension [click here](https://github.com/cli/cli#installation)
 - Generate Personal Access Token (PAT) from source and target repositories. GitHub > Settings > Profile > Personal Access Token
 - If migrating from ADO to GHE then source PAT = ADO and target PAT = GHE
 - Set the privileges appropriately while creating the token. check required access [here](https://docs.github.com/en/migrations/using-github-enterprise-importer/preparing-to-migrate-with-github-enterprise-importer/managing-access-for-github-enterprise-importer#required-roles-for-github)
