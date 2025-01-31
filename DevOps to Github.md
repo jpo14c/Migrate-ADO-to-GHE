@@ -1,7 +1,9 @@
 
 # Migrate Azure DevOps to Github Enterprise
 
-Good to read [click here](https://github.com/github/gh-gei#readme)
+Good to read <br>
+[click here](https://github.com/github/gh-gei#readme)<br>
+[migrating-repositories](https://docs.github.com/en/migrations/using-github-enterprise-importer/migrating-from-azure-devops-to-github-enterprise-cloud/migrating-repositories-from-azure-devops-to-github-enterprise-cloud)
 
 ## Objectives:
 - Migrate a single repository from Azure DevOps to Github Enterprise (GHE)
