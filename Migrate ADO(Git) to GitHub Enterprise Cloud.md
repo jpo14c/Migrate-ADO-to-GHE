@@ -1,5 +1,5 @@
 
-# Migrate Azure DevOps to Github Enterprise
+# Migrate Azure DevOps to Github Enterprise Cloud
 
 Need to read <br>
 [migrating-repositories Doc](https://docs.github.com/en/migrations/using-github-enterprise-importer/migrating-from-azure-devops-to-github-enterprise-cloud/migrating-repositories-from-azure-devops-to-github-enterprise-cloud)
