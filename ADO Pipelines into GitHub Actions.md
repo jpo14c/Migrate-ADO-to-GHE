@@ -17,7 +17,7 @@ Azure DevOps migrations powered by GitHub Actions Importer  [video](https://www.
 
 5. Now we are ready to simulate the migration and see how well this tool can handle all of our pipeline quirks. To run the simulation use Audit command with output directory.<br>
 ```gh actions-importer audit azure-devops --no-ssl-verify --output-dir \pipeline_2_github```
-6. Testing the migration process
+6. Testing the migration process <br>
 The dry-run subcommand can be used to convert a pipeline to its GitHub Actions equivalent, and then write the workflow to your local filesystem.<br>
 ```gh actions-importer dry-run azure-devops pipeline --pipeline-id 17  --no-ssl-verify --output-dir \pipeline_2_github```
 
