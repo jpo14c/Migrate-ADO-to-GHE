@@ -1,6 +1,6 @@
 ### How to Migrate from Azure DevOps Pipelines into GitHub Actions
-GitHub-actions-importer  doc 
-Azure DevOps migrations powered by GitHub Actions Importer  video
+GitHub-actions-importer  [doc](https://docs.github.com/en/actions/migrating-to-github-actions/using-github-actions-importer-to-automate-migrations/automating-migration-with-github-actions-importer <br>
+Azure DevOps migrations powered by GitHub Actions Importer  [video](https://www.youtube.com/watch?v=gG-2bkmBRlI)
 
 1. Install GitHub CLI and gh-actions-importer extension
 2. To run the migration, we need two PAT tokens. One for the GitHub and another for the         Azure DevOps. GitHub token requires workflow scope to work. Azure DevOps token  requires following permissions to work:
