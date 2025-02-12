@@ -6,7 +6,7 @@ Azure DevOps migrations powered by GitHub Actions Importer  [video](https://www.
 2. To run the migration, we need two PAT tokens. One for the GitHub and another for the         Azure DevOps. GitHub token requires repo and workflow scope to work. Azure DevOps token  requires following permissions to work:
 •	Agents Pool: Read
 •	Build: Read
-•	Code: Read
+•	Code: Read <br>
 •	Release: Read
 •	Service Connections: Read
 •	Task Groups: Read
