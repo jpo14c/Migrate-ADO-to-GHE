@@ -11,13 +11,18 @@ Azure DevOps migrations powered by GitHub Actions Importer  [video](https://www.
 •	Service Connections: Read
 •	Task Groups: Read
 •	Variable Groups: Read
-3. Now we have everything set and we can configure the GH CLI extension by running configure command. ```gh actions-importer configure```<br> Answer the questions that wizard asks and use default for GitHub and Azure DevOps    base URLs. Don’t add your organization names to these.
+3. Now we have everything set and we can configure the GH CLI extension by running configure command. ```gh actions-importer configure```<br> Answer the questions that wizard asks and use default for GitHub and Azure DevOps    base URLs. 
 4. Next we need to update the actions importer, even though that we just installed it. I don’t know why this needs to be done, but without it the migration will most probably produce an error. Run update with following command:  ```gh actions-importer update```
 
 
 5. Now we are ready to simulate the migration and see how well this tool can handle all of our pipeline quirks. To run the simulation use Audit command with output directory.<br>
-```gh actions-importer audit azure-devops --no-ssl-verify --output-dir C:\Users\jpo14c\PROJECTS\pipeline_2_github```
-## Migration
-Finally we can run our importer and do the actual migration. Great thing about this tool is that it will create pull request about the imported action. It won’t just magically create things into your GitHub repository. To be able to create a pull request is a powerful tool to inspect the final result, maybe create an extension and rerun the the migration. Pull request can also be reviewed by your co-workers, so you get that extra security and safety over what you are doing.
+```gh actions-importer audit azure-devops --no-ssl-verify --output-dir \pipeline_2_github```
+6. Testing the migration process
+The dry-run subcommand can be used to convert a pipeline to its GitHub Actions equivalent, and then write the workflow to your local filesystem.<br>
+```gh actions-importer dry-run azure-devops pipeline --pipeline-id 17  --no-ssl-verify --output-dir \pipeline_2_github```
+
+7. Migrating a pipeline to GitHub Actions
+The migrate subcommand can be used to convert a pipeline to its GitHub Actions equivalent and then create a pull request with the contents. Finally, we can run our importer and do the actual migration. Great thing about this tool is that it will create pull request about the imported action. It won’t just magically create things into your GitHub repository. To be able to create a pull request is a powerful tool to inspect the final result, maybe create an extension and rerun the the migration. Pull request can also be reviewed by your co-workers, so you get that extra security and safety over what you are doing.
+
 Migration is run with migrate azure-devops pipeline command. You need to pass the pipeline-id (if you want to run it just for one pipeline), GitHub target URL and directory for logs. You can find the pipeline id easily by editing a pipeline at Azure DevOps and check the URL.
 ```gh actions-importer migrate azure-devops pipeline --no-ssl-verify --pipeline-id (pipeline id at Azure DevOps) --target-url https://github.com/(your organization)/(your repository) --output-dir ghactionsmigrate```
