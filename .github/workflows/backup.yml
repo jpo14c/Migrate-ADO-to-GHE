@@ -26,8 +26,7 @@ jobs:
         id: create_branch
         run: |
             echo "Creating backup branch"
-            TIMESTAMP=$(TZ="US/Eastern" date +"%Y-%m-%d-%H-%M")
-            TIMESTAMP=$(TZ="US/Eastern" date +"%Y-%m-%d-%H-%M")
+            TIMESTAMP=$(TZ="US/Eastern" date +"%Y-%m-%d-%H-%M")           
             BRANCH_NAME="backup-$TIMESTAMP"
             echo "Branch name: $BRANCH_NAME"
             git checkout -b $BRANCH_NAME
