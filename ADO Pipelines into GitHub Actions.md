@@ -26,3 +26,6 @@ The migrate subcommand can be used to convert a pipeline to its GitHub Actions e
 
 Migration is run with migrate azure-devops pipeline command. You need to pass the pipeline-id (if you want to run it just for one pipeline), GitHub target URL and directory for logs. You can find the pipeline id easily by editing a pipeline at Azure DevOps and check the URL.<br>
 ```gh actions-importer migrate azure-devops pipeline --no-ssl-verify --pipeline-id (pipeline id at Azure DevOps) --target-url https://github.com/(your organization)/(your repository) --output-dir ghactionsmigrate```
+
+
+#########################################
