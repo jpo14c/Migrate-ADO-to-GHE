@@ -16,11 +16,11 @@ jobs:
           fetch-depth: 0  # Fetch all branches
           token: ${{ secrets.PAT }}
 
-      - name: Set up Git
-        run: |
-          echo "Setting up Git configuration"
-          git config --global user.name 'github-actions'
-          git config --global user.email 'github-actions@github.com'
+      # - name: Set up Git
+      #   run: |
+      #     echo "Setting up Git configuration"
+      #     git config --global user.name 'github-actions'
+      #     git config --global user.email 'github-actions@github.com'
 
       - name: Create backup branch
         id: create_branch
