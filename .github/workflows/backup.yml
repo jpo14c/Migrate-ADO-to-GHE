@@ -22,33 +22,3 @@ jobs:
           git config --global user.name 'github-actions'
           git config --global user.email 'github-actions@github.com'
 
-      - name: Create backup branch
-        id: create_branch
-        run: |
-          echo "Creating backup branch"
-          TIMESTAMP=$(TZ="US/Eastern" date +"%Y-%m-%d-%H-%M")
-          BRANCH_NAME="backup-$TIMESTAMP"
-          echo "Branch name: $BRANCH_NAME"
-          git checkout -b $BRANCH_NAME
-          echo "BRANCH_NAME=$BRANCH_NAME" >> $GITHUB_ENV
-
-      - name: Add backup remote
-        run: |
-          echo "Adding remote backup repository"
-          git remote add backup https://${{ secrets.PAT }}@github.com/jpo14c/backup_repo
-          git remote -v  # List remotes to verify
-
-      - name: Pull changes from backup repository
-        run: |
-          echo "Pulling changes from backup repository"
-          git pull backup main --rebase || echo "No changes to pull"
-
-      - name: Check PAT permissions
-        run: |
-          echo "Checking PAT permissions"
-          curl -H "Authorization: token ${{ secrets.PAT }}" https://api.github.com/po14c/Migrate-ADO-to-GHE
-
-      - name: Push to backup repository
-        run: |
-          echo "Pushing to remote repository"
-          git push backup ${{ env.BRANCH_NAME }} --force
