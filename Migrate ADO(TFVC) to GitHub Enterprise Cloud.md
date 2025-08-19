@@ -27,7 +27,7 @@ If you get an output similar to Unable to load DLL 'Microsoft.VisualStudio.Setup
 
 **5.** Run git tfs clone, passing your TFVC repository’s URL and repository path as arguments. <br> run ``` git tfs clone  https://dev.azure.com/Sherwin-Williams $/CHAPPIE . ```
 
-**6.** Move into the directory for the newly-created Git repository.
+**6.** This newly-created Git repository now can be push to GitHub.
 
 **7.** To add your GitHub repository as a remote, run ```git remote add origin URL```, replacing URL with the URL for the GitHub repository you created earlier, such as ```https://github.com/sherwin-williams-co/example-repository.git```.
    
