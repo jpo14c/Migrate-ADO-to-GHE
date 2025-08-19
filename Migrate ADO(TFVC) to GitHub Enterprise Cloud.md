@@ -33,7 +33,7 @@ If you get an output similar to Unable to load DLL 'Microsoft.VisualStudio.Setup
    
 **8.** Create main branch run  ```git branch -M main```
 
-**9.** To push the repository to GitHub, run ```git push -u origin main origin ```
+**9.** To push the repository to GitHub, run ```git push -u origin main  ```
 
 If your repository contains any files that are larger than GitHub's file size limit, your push may fail. Move the large files to Git LFS by running git lfs import, then try again.
 
