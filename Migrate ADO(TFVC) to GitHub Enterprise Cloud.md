@@ -29,7 +29,7 @@ If you get an output similar to Unable to load DLL 'Microsoft.VisualStudio.Setup
 
 **6.** Move into the directory for the newly-created Git repository.
 
-**7.** To add your GitHub repository as a remote, run ```git remote add origin URL```, replacing URL with the URL for the GitHub repository you created earlier, such as https: //github.com/octocat/example-repository.git.
+**7.** To add your GitHub repository as a remote, run ```git remote add origin URL```, replacing URL with the URL for the GitHub repository you created earlier, such as https://github.com/sherwin-williams-co/example-repository.git.
    
 **8.** Create main branch run  ```git branch -M main```
 
