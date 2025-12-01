@@ -1,16 +1,16 @@
-# Migrate Azure DevOps to Github Enterprise Cloud
+# Migrate Azure DevOps to Github 
 
 Need to read <br>
 [migrating-repositories Doc](https://docs.github.com/en/migrations/using-github-enterprise-importer/migrating-from-azure-devops-to-github-enterprise-cloud/migrating-repositories-from-azure-devops-to-github-enterprise-cloud)
 
 ## Objectives:
-- Migrate a single repository from Azure DevOps to Github Enterprise (GHE)
-- Migrate multiple repositories in batch from Azure DevOps to Github Enterprise (GHE)
-- Migrate ADO 'organization(s)', which contains multiple projects, repos, branches, tags, commits, code review comments,  and pipelines, to GitHub Enterprise (GHE)
+- Migrate a single repository from Azure DevOps to Github 
+- Migrate multiple repositories in batch from Azure DevOps to Github 
+- Migrate ADO 'organization(s)', which contains multiple projects, repos, branches, tags, commits, code review comments,  and pipelines, to GitHub 
 -----------------
 
 ## Migration Approach:
-- Migrate repositories from ADO to GH 
+- Migrate repositories from ADO to GitHub
 - Migrate Azure Pipelines to GitHub Actions
 - Migrate remaining assets (boards, artifacts) from ADO to GitHub
 - Before  migrate from Azure DevOps, you should plan out how you will run your migration. Before migrating any data, you will need to
