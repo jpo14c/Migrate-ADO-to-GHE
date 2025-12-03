@@ -1,8 +1,4 @@
-## Migrate Azure DevOps to Github Enterprise!!!!
-
-- [ ] Task 1
-- [ ] Task 2
-- [x] Completed task 3
+## Migrate Azure DevOps to Github !!!!
 
 
 
